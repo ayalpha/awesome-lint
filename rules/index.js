@@ -8,6 +8,7 @@ import listItem from './list-item.js';
 import balancedPunctuation from './balanced-punctuation.js';
 import noCiBadge from './no-ci-badge.js';
 import noRepeatItemInDescription from './no-repeat-item-in-description.js';
+import headerImage from './header-image.js';
 import spellCheck from './spell-check.js';
 import toc from './toc.js';
 import doubleLink, {createAwesomeListIgnore} from './double-link.js';
@@ -36,6 +37,7 @@ const createRules = (options = {}) => {
 		[balancedPunctuation, ['error']],
 		[noCiBadge, ['error']],
 		[noRepeatItemInDescription, ['error']],
+		[headerImage, ['error']],
 		[spellCheck, ['warn']], // Spell-check violations are warnings, not errors
 		[toc, ['error']],
 		// Configure double-link with awesome-list behavior and project website ignoring
